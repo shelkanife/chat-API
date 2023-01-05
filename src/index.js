@@ -25,3 +25,5 @@ app.use("/chat/rooms", require("./routes/rooms").router);
 server.listen(app.get("port"), () =>
   console.log("Running on port ", app.get("port"))
 );
+
+module.exports = server;
